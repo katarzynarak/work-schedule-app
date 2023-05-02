@@ -5,6 +5,6 @@ Used:
 
 <b>Node.js</b>
 
-Express
+<b>Express</b>
 
-Ejs
+<b>EJS<b>
