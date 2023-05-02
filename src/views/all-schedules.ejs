@@ -1,0 +1,29 @@
+<%- include('includes/head.ejs') %>
+
+<body>
+
+    <h1>All schedules</h1>
+    
+    <div class="row-schedules">
+        <h2 class="one-shedule">Id</h2>
+        <h2 class="one-shedule">Firstname</h2>
+        <h2 class="one-shedule">Lastname</h2>
+        <h2 class="one-shedule">Day</h2>
+        <h2 class="one-shedule">Start</h2>
+        <h2 class="one-shedule">End</h2>
+    </div>
+
+    <% for (let one of schedules) { %>
+        <div class ="row-schedules">
+            <p class="one-shedule"><%= one.user_id %></p>
+            <p class="one-shedule"><%= (users[one.user_id]).firstname %></p>
+            <p class="one-shedule"><%= (users[one.user_id]).lastname %></p>
+            <p class="one-shedule"><%= one.day %></p>
+            <p class="one-shedule"><%= one.start_at %></p>
+            <p class="one-shedule"><%= one.end_at %></p>
+        </div>
+    <% } %>
+    
+</body>
+
+</html>

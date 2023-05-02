@@ -1,0 +1,64 @@
+
+body {
+	background-color: hsl(200, 30%, 10%);
+	color: hsl(200, 30%, 75%);
+    margin: auto;
+    text-align: center;
+    font-size: 24px;
+    margin: 25px;
+}
+
+h1 { 
+    color: white;
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 36px; 
+}
+
+.row-schedules,
+.row-schedules,
+.row-users,
+.row-users {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+
+.one-user {
+    width: 25%;
+    word-wrap: break-word;
+}
+
+.one-shedule {
+    width: 15%;
+}
+
+.add-user,
+.add-schedule {
+    width: 20%;
+    height: 40px;
+    font-size: 16px;
+    padding-left: 5px;
+}
+
+.yellow-color {
+    color:  hsl(55, 100%, 70%);
+}
+
+.submit {
+    width: 20%;
+    height: 40px;
+    margin-top: 50px;
+    background-color: hsl(200, 30%, 75%);
+    color: hsl(200, 30%, 10%);
+    font-size: 16px;
+}
+.name-option {
+    font-style: italic;
+    width: 300px;
+}
+

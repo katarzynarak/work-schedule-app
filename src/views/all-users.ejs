@@ -1,0 +1,25 @@
+<%- include('includes/head.ejs') %>
+
+<body>
+
+    <h1>All users</h1>
+        
+    <div class="row-users">
+        <h2 class="one-user">Firstname</h2>
+        <h2 class="one-user">Lastname</h2>
+        <h2 class="one-user">Email</h2>
+        <h2 class="one-user">Password</h2>
+    </div>
+
+    <% for (let one of users) { %>
+        <div class ="row-users">
+            <p class="one-user"><%= one.firstname %></p>
+            <p class="one-user"><%= one.lastname %></p>
+            <p class="one-user"><%= one.email %></p>
+            <p class="one-user"><%= one.password %></p>
+        </div>
+    <% } %>
+
+</body>
+
+</html>

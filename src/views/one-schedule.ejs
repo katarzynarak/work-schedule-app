@@ -1,0 +1,24 @@
+<%- include('includes/head.ejs') %>
+
+<body>
+
+    <h1>All schedules for:</h1> 
+    <h1 class="yellow-color"><%= firstname%> <%= lastname%></h1>
+
+    <div class="row-schedules">
+        <h2 class="one-shedule">Day</h2>
+        <h2 class="one-shedule">Start</h2>
+        <h2 class="one-shedule">End</h2>
+    </div>
+
+    <% for (let one of schedule) { %>
+        <div class ="row-schedules">
+            <p class="one-shedule"><%= one.day %></p>
+            <p class="one-shedule"><%= one.start_at %></p>
+            <p class="one-shedule"><%= one.end_at %></p>
+        </div>
+    <% } %>
+
+</body>
+
+</html>

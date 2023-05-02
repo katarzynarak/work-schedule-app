@@ -1,0 +1,54 @@
+<%- include('includes/head.ejs') %>
+
+<body>
+
+    <h1>Add new user</h1>
+    
+    <div class="row-users">
+        <h2 class="one-user">Firstname</h2>
+        <h2 class="one-user">Lastname</h2>
+        <h2 class="one-user">Email</h2>
+        <h2 class="one-user">Password</h2>
+    </div>
+
+    <div>
+        <form action="/users" method="POST" class="row-users">
+        <input
+          class="add-user"
+          type="text"
+          name="firstname"
+          placeholder="John"
+          value='<%= firstname %>'
+          required
+        />
+        <input
+          class="add-user"
+          type="text"
+          name="lastname"
+          placeholder="Smith"
+          value='<%= lastname %>'
+          required
+        />
+        <input
+          class="add-user"
+          type="email"
+          name="email"
+          placeholder="John@gmail.com"
+          value='<%= email %>'
+          required
+        />
+        <input
+          class="add-user"
+          type="password"
+          placeholder="password"
+          name="password"
+          value='<%= password %>'
+          required
+        />  
+    </div>
+    <button class="submit" type="submit">Add</button>
+    </form>
+
+</body>
+
+</html>

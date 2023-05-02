@@ -1,0 +1,80 @@
+<%- include('includes/head.ejs') %>
+
+<body>
+
+    <h1>Add new schedule</h1>
+    
+    <div class="row-schedules">
+        <h2 class="one-shedule">Name</h2>
+        <h2 class="one-shedule">Day</h2>
+        <h2 class="one-shedule">Start</h2>
+        <h2 class="one-shedule">End</h2>
+    </div>
+
+    <div>
+        <form action="/schedules" method="POST" class="row-schedules">
+            
+            <select class="add-schedule" class="name-option" name="name" required>
+                <option disapbled selected value class="name-option">Select user </option>
+                   <% for (let i =0; i<names.length; i++) { %>
+                       <option value="<%= names[i]%>"><%= names[i]%></option>
+                   <% } %>
+            </select>
+                
+            <select class="add-schedule" name="day" required>
+                <option disapbled selected value class="name-option">Select day </option>
+                <option value='<%= 1 %>'>Monday</option>
+                <option value='<%= 2 %>'>Tuesday</option>
+                <option value='<%= 3 %>'>Wednesday</option>
+                <option value='<%= 4 %>'>Thursday</option>
+                <option value='<%= 5 %>'>Friday</option>
+                <option value='<%= 6 %>'>Saturday</option>
+                <option value='<%= 7 %>'>Sunday</option>
+            </select>
+
+            <select class="add-schedule" name="start" required>
+                <option disapbled selected value class="name-option">Select start hour</option>
+                <option value='<%= '8AM' %>'>08AM</option>
+                <option value='<%= '9AM' %>'>09AM</option>
+                <option value='<%= '10AM' %>'>10AM</option>
+                <option value='<%= '11AM' %>'>11AM</option>
+                <option value='<%= '12AM' %>'>12AM</option>
+                <option value='<%= '1PM' %>'>01PM</option>
+                <option value='<%= '2PM' %>'>02PM</option>
+                <option value='<%= '3PM' %>'>03PM</option>
+                <option value='<%= '4PM' %>'>04PM</option>
+                <option value='<%= '5PM' %>'>05PM</option>
+                <option value='<%= '6PM' %>'>06PM</option>
+                <option value='<%= '7PM' %>'>07PM</option>
+                <option value='<%= '8PM' %>'>08AM</option>
+                <option value='<%= '9PM' %>'>09PM</option>
+                <option value='<%= '10PM' %>'>10PM</option>
+            </select>
+
+            <select class="add-schedule" name="end" required>
+                <option  disapbled selected value class="name-option">Select end hour</option>
+                <option value='<%= '8AM' %>'>08AM</option>
+                <option value='<%= '9AM' %>'>09AM</option>
+                <option value='<%= '10AM' %>'>10AM</option>
+                <option value='<%= '11AM' %>'>11AM</option>
+                <option value='<%= '12AM' %>'>12AM</option>
+                <option value='<%= '1PM' %>'>01PM</option>
+                <option value='<%= '2PM' %>'>02PM</option>
+                <option value='<%= '3PM' %>'>03PM</option>
+                <option value='<%= '4PM' %>'>04PM</option>
+                <option value='<%= '5PM' %>'>05PM</option>
+                <option value='<%= '6PM' %>'>06PM</option>
+                <option value='<%= '7PM' %>'>07PM</option>
+                <option value='<%= '8PM' %>'>08AM</option>
+                <option value='<%= '9PM' %>'>09PM</option>
+                <option value='<%= '10PM' %>'>10PM</option>
+            </select>
+
+    </div>
+
+    <button class="submit" type="submit">Add</button>
+    </form>
+
+</body>
+
+</html>
