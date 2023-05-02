@@ -3,8 +3,8 @@ Work schedule app for employees
 
 Used:
 
-Node.js
+**Node.js
 
 Express
 
-Ejs
+Ejs**
